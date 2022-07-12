@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <title>05-Basic_Utility_2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {                   // Agar default setting dan custom setting jalan semua
+                spacing: {              // Membuat spacing sendiri
+                    13: '3.25rem',      
+                },
+                fontFamily: {           // Menambahkan font sendiri
+                    inter: ['Inter'],   
+                },
+                colors: {               // Menambahkan warna sendiri
+                    rest: '#bada55',
+                    kopi: '#c0ffee',
+                }
+            },
+          },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        /*
+        * {
+            border: 1px solid red;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1 class="text-8xl font-bold text-center my-10">Basic Utility - <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Bagian 2</span></h1>
+
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 via-red-300 to-yellow-300">
+        <h2 class="text-3xl">Spacing</h2>
+        <div class="m-13">Margin</div>
+        <div class="p-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+        <h2 class="text-3xl">Sizing</h2>
+        <div class="w-32 h-32 bg-kopi">Kotak 1</div>
+        <!-- <div class="max-w-xs min-h-screen">Kotak 2</div> -->
+    </section>
+
+    <section class="font-inter max-w-3xl mx-auto">
+        <h2 class="mb-2 text-4xl font-bold">Typography pada TailwindCSS</h2>
+        <div class="mb-4 text-lg text-gray-500">
+            By <a href="" class="text-gray-700">AcilRestu12</a>, 12 Juli 2022
+        </div>
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet, <a href="" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Reiciendis sed beatae nihil sequi omnis iste cupiditate rem error sunt qui ducimus exercitationem ex, quisquam a corrupti aliquid neque asperiores quidem. Quas omnis unde tempore iste, esse libero nihil molestias! Cum suscipit exercitationem voluptas explicabo ipsa temporibus nesciunt placeat itaque doloremque.
+        </p>
+        <blockquote class="mb-4 italic font-thin text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eveniet culpa hic nulla quibusdam unde doloribus modi officiis itaque fugiat.
+        </blockquote>
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus labore odit quas reprehenderit, eius aut architecto dolor commodi, optio possimus nesciunt! Ratione voluptas neque quisquam cum explicabo est alias!
+        </p>
+    </section>
+
+    <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed" style="background-image: url(https://source.unsplash.com/1000x600?computer);">
+        <p class="p-5 text-2xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium saepe, sint quas facere deleniti dolores tempora laboriosam quisquam nobis exercitationem accusantium libero animi, vero nam! Minus maiores deleniti corrupti fugit magni expedita aliquid, voluptas debitis laudantium a nobis animi, totam, officia obcaecati placeat repellendus vel tempore veritatis dicta quaerat numquam esse eaque consectetur! Placeat quisquam facere suscipit tempore fuga quia necessitatibus a quasi reiciendis tenetur error, pariatur quo incidunt illo cum quam eveniet optio eaque. Iure voluptatibus, velit natus illum id consectetur eos fuga nihil ut qui sapiente optio in veniam veritatis. Iusto nam ut fugit tempora corrupti mollitia necessitatibus, modi nihil quidem deleniti soluta, ducimus quam assumenda libero dolor fuga a maxime commodi temporibus illum? Ducimus tempora dolorum veritatis deleniti molestias. Earum, nulla sapiente beatae ut officia voluptatem recusandae unde repudiandae dolores accusamus quo natus mollitia harum laborum velit ipsum. Itaque voluptatum reiciendis, commodi quibusdam debitis vero modi distinctio laborum sapiente? Nam, ut assumenda! Cumque dolor in accusamus ea nostrum fugiat saepe, quos adipisci delectus error voluptate, sapiente dolorum rem ratione quis aliquam ullam excepturi? Totam repellat, nam maiores culpa, non quibusdam magni eligendi fugit quos nihil corrupti esse eos ex ipsa molestiae facilis. Placeat quam exercitationem aliquid quasi.
+        </p>
+    </div>
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl border-slate-400 shadow-xl shadow-slate-500 overflow-hidden border-8 blur-sm hover:blur-none flex" style="background-image: url(img/1.jpg);">
+        <!-- <div class="w-full h-full bg-blue-300 mix-blend-overlay"></div> -->
+        <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-md rounded-full"></div>
+    </div>
+    
+    <div class="mb-96"></div>
+    
+</body>
+</html>
