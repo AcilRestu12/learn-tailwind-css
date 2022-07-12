@@ -34,8 +34,8 @@
             border: 1px solid red;
         }
         */
-        #toogle:checked ~ label div.toogle-circle {
-            @apply translate-x-3;
+        #toogle:checked ~ label div.toogle-circle {     /* Apabila tombol dengan id toogle dicheck */
+            @apply translate-x-3;                       /* div dengan class toogle-circle akan bergeser ke kanan */
         }
     </style>
 </head>
@@ -120,8 +120,11 @@
         const checkbox = document.querySelector('#toogle');
         const html = document.querySelector('html');
 
-        checkbox.addEventListener('click', function() {
+        checkbox.addEventListener('click', function() {         // Apabila toogle diclick
             // checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+            
+            // Apabila checkbox true maka tambahkan class dark pada html
+            // Dan apabila checkbox false maka hilangkan class dark pada html dan tambahkan class light pada html
             checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark'); html.classList.add('light');
         });
     </script>
